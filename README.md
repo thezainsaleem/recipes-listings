@@ -1,4 +1,12 @@
-# Setup Instructions
+# recipes-listings
+
+# FrontEnd Setup
+
+* npm install
+
+* npm run dev
+
+# BackEnd Setup Instructions
 
 Things you may want to cover:
 
