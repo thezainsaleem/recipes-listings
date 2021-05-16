@@ -6,7 +6,7 @@ const RecipeItem = ({recipe}) => {
   return(
     <div class="col col-md-6">
       <Link href="/recipes/[id]" as={`/recipes/${recipe.id}`}>
-        <a class="card text-decoration-none my-2">
+        <a data-cy="nav-item" class="card text-decoration-none my-2">
           <div class="row">
             <div class="col col-md-4">
               <img

@@ -34,7 +34,7 @@ const recipe = ({recipe}) => {
 export const getServerSideProps = async ({req, res, params}) => {
   try{
     const recipeRes = await axios({
-      url: `http://localhost:3000/api/v1/recipes/${params.id}`,
+      url: `${process.env.SERVER_URL}/api/v1/recipes/${params.id}`,
       headers: {
         'Content-Type': 'application/json',
         // 'Authorization': req.cookies.token

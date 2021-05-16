@@ -20,7 +20,7 @@ export const getServerSideProps = async ({req, res}) => {
 
   try{
       const recipesResponse = await axios({
-        url: "http://localhost:3000/api/v1/recipes",
+        url: `${process.env.SERVER_URL}/api/v1/recipes`,
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
