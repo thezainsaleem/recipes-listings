@@ -1,24 +1,44 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup Instructions
 
 Things you may want to cover:
 
 * Ruby version
+  2.5
 
 * System dependencies
+  POSTGRES
 
-* Configuration
+# How to run the test suite
+  ```ruby
+  rspec
+  ```
 
-* Database creation
+* Test Case Coverage
+  Over 95 percent for Controllers and Service  []
 
-* Database initialization
+  ![image](https://user-images.githubusercontent.com/48410696/118402933-88fb2c80-b685-11eb-8046-aecb6a59248e.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+# Run App
+  ```ruby
+  rails server
+  ```
 
-* ...
+# Routes
+  ```ruby
+  rake routes
+  ```
+
+  Following REST conventions
+
+  ### Recipes
+  - /api/v1/recipes
+  - GET /       => :index
+  - GET /:id    => :show
+
+# A Look at Gemfile
+  - simplecov for test case coverage
+  - rspec-rails for Test Driven Development
+
+
